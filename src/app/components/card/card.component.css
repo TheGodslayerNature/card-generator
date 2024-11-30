@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --main-div-width: 745px;
+    --main-div-height: 1120px;
+    --main-back-color: #151b25;
+    --notchSize: 20px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    padding: 5px;
+    width: var(--main-div-width);
+    height: var(--main-div-height);
+    background-color: #151b25;
+}
+
+.borda-fora {
+    width: var(--main-div-width);
+    height: var(--main-div-height);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    clip-path: polygon(0% var(--notchSize),
+            var(--notchSize) 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% calc(100% - var(--notchSize)),
+            calc(100% - var(--notchSize)) 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
+}
+
+.borda-dentro {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #151b25;
+    clip-path: polygon(0% var(--notchSize),
+            var(--notchSize) 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% calc(100% - var(--notchSize)),
+            calc(100% - var(--notchSize)) 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
+    flex-wrap: wrap;
+}
+
+.card-title {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Noto Serif", serif;
+}
+
+.card-img {
+    width: 90%;
+    height: 50%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+
+.card-status {
+    display: flex;
+    width: 90%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-status img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.card-status p {
+    color: #ffffff;
+    font-family: "Alice", serif;
+    font-weight: 400;
+}
+
+#atk {
+    position: absolute;
+    padding-left: 2.9rem;
+    padding-top: 0.9rem;
+}
+
+#gua {
+    position: absolute;
+    padding-left: 47.7rem;
+}
+
+#d20 {
+    opacity: 0.7;
+}
+
+.card-especial {
+    width: 90%;
+    height: 20%;
+}
+
+#card-effect {
+  color: #ffffff;
+  font-family: "Alice", serif;
+  font-weight: 400;
+}

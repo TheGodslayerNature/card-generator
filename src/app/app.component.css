@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-creator {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-creator mat-form-field {
+    padding: 20px;
+    width: 50%;
+}
+
+.card-creator textarea {
+    height: 200px;
+}
+
+.number-inputs {
+    width: 30px;
+    text-align: center;
+}
+
+.card-creator button{
+    width: 150px;
+    margin-top: 30px;
+}
+
+.card-container {
+    width: 50%;
+    border: 2px;
+    border-radius: 8px;
+    text-wrap: pretty;
+}
