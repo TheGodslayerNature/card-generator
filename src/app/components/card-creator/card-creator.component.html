@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="form-container">
+        <app-form (enviandoCard)="recebendoInformacao($event)" [element]="element"></app-form>
+    </div>
+    <div class="card-container" id="card-preview">
+        <app-card [nome]="card.name" [vida]="card.vida" [atk]="card.atk" [def]="card.def" [img]="card.image" [especial]="card.especial"></app-card>
+    </div>
+</div>
