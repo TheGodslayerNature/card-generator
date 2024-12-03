@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,10 +7,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-
-  @Input() name:string = "";
-  @Input() effect:string = "";
-  @Input() image!: string | ArrayBuffer | null;
-  @Input() atk:number = 0;
-  @Input() shield:number = 0;
+  @Input() nome!:string;
+  @Input() vida!:number;
+  @Input() atk!:number;
+  @Input() def!:number;
+  @Input() especial!:string;
+  @Input() img!:string | ArrayBuffer | null;
 }
