@@ -1,0 +1,30 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.status-points {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.points {
+    width: 20%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    border-radius: 2px;
+}
