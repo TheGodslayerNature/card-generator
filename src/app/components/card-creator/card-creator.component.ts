@@ -13,7 +13,7 @@ import { CardModel } from '../../interfaces/card-model';
   styleUrl: './card-creator.component.css'
 })
 export class CardCreatorComponent {
-  card:CardModel = {name:"",vida:0,atk:0, def:0, image:null, especial:""};
+  card:CardModel = {name:"",vida:0,atk:0, def:0, image:null, especialName:"",especial:""};
   element:any;
   
   recebendoInformacao(event:CardModel){
