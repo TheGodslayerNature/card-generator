@@ -13,4 +13,5 @@ export class CardComponent {
   @Input() def!:number;
   @Input() especial!:string;
   @Input() img!:string | ArrayBuffer | null;
+  @Input() especialName!: string;
 }

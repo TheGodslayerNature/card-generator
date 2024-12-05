@@ -1,31 +1,33 @@
 <body>
     <div class="card-container">
-        <div class="borda-fora">
-            <div class="borda-dentro">
+        <div class="borda-dentro">
 
-                <div class="card-title">
-                    <h2>{{nome}}</h2>
+            <div class="card-title">
+                <h2 class="title-name">{{nome}}</h2>
+            </div>
+            <div class="card-img">
+                <img src={{img}}>
+                <p>Vida: {{vida}}</p>
+            </div>
+            <div class="card-status">
+
+                <img id="sword" src="rpg-game_902996.png" alt="">
+
+                <p id="atk">{{atk}}</p>
+
+                <img id="d20" src="d20.png" alt="">
+
+                <img id="shield" src="escudo2.png" alt="">
+
+                <p id="gua">{{def}}</p>
+            </div>
+            <div class="card-especial">
+                <div class="especial-name-container">
+                    <p id="especial-name">Habilidade Especial: {{especialName}}</p>
                 </div>
-                <div class="card-img">
-                    <img src={{img}}>
-                    <p>Vida: {{vida}}</p>
-                </div>
-                <div class="card-status">
-
-                    <img id="sword" src="rpg-game_902996.png" alt="">
-
-                    <p id="atk">{{atk}}</p>
-
-                    <img id="d20" src="d20.png" alt="">
-
-                    <img id="shield" src="escudo2.png" alt="">
-
-                    <p id="gua">{{def}}</p>
-                </div>
-                <div class="card-especial">
-                    <p>{{especial}}</p>
-                </div>
+                <p>{{especial}}</p>
             </div>
         </div>
+
     </div>
 </body>
