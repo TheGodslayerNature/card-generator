@@ -7,18 +7,22 @@
         <div class="status-points">
             <mat-form-field class="points">
                 <mat-label>Vida</mat-label>
-                <input matInput type="number" [(ngModel)]="card.vida">
+                <input class="inputs" matInput type="number" [(ngModel)]="card.vida" oninput="if (this.value.length > 2) this.value = this.value.slice(0,2)">
             </mat-form-field>
             <mat-form-field class="points">
                 <mat-label>ATK</mat-label>
-                <input matInput type="number" [(ngModel)]="card.atk">
+                <input class="inputs" matInput type="number" [(ngModel)]="card.atk" oninput="if (this.value.length > 2) this.value = this.value.slice(0,2)">
             </mat-form-field>
             <mat-form-field class="points">
                 <mat-label>DEF</mat-label>
-                <input matInput type="number" [(ngModel)]="card.def">
+                <input class="inputs" matInput type="number" [(ngModel)]="card.def" oninput="if (this.value.length > 2) this.value = this.value.slice(0,2)">
             </mat-form-field>
         </div>
         <input type="file" (change)="onImageUpload($event)" accept="image/*">
+        <mat-form-field id="especial-name-input">
+            <mat-label>Nome do especial</mat-label>
+            <input matInput type="text" [(ngModel)]="card.especialName">
+        </mat-form-field>
         <mat-form-field>
             <mat-label>Especial</mat-label>
             <textarea matInput [(ngModel)]="card.especial"></textarea>

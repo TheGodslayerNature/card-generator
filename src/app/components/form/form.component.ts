@@ -14,7 +14,7 @@ import html2canvas from 'html2canvas';
 })
 export class FormComponent {
   @Output() enviandoCard = new EventEmitter<CardModel>();
-  card:CardModel = {name:"",vida:0,atk:0, def:0, image:null, especial:""};
+  card:CardModel = {name:"",vida:0,atk:0, def:0, image:null, especialName:"",especial:""};
   @Input() element:any;
 
   onImageUpload(event:Event) {
