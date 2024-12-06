@@ -18,7 +18,7 @@
                 <input class="inputs" matInput type="number" [(ngModel)]="card.def" oninput="if (this.value.length > 2) this.value = this.value.slice(0,2)">
             </mat-form-field>
         </div>
-        <input type="file" (change)="onImageUpload($event)" accept="image/*">
+        <ngp-image-picker [_config]="imagePickerConfig" ($imageChanged)="onImageChanged($event)" [_imageSrc]="card.image"></ngp-image-picker>
         <mat-form-field id="especial-name-input">
             <mat-label>Nome do especial</mat-label>
             <input matInput type="text" [(ngModel)]="card.especialName">
